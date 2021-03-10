@@ -1,11 +1,17 @@
 import React from 'react';
-import {View, Text } from  'react-native';
+import {Container,Logo,Button,ButtonText} from './styles';
+
+
 
 const HomeScreen: React.FC  = () =>{
   return(
-    <View>
-      <Text style={{color:"#000"}}> Home Screen</Text>
-    </View>
+    <Container>
+      <Logo source={{uri:'https://static1-www.millenium.gg/articles/7/18/65/7/@/188382-twitch-orig-1-article_image_t-1.jpeg'}} resizeMode="contain"/>
+      <Button>
+        <ButtonText> Entrar </ButtonText>
+      </Button>
+
+    </Container>
   )
 }
 
